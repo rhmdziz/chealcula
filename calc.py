@@ -197,6 +197,9 @@ def derivative():
 ## HISTORY
 def history():
 	st.subheader('# History')
+	a = st.button('clear')
+	if a:
+		data_history.clear()
 
 	data_history.reverse()
 
